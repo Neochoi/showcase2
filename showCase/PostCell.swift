@@ -110,7 +110,7 @@ class PostCell: UITableViewCell {
                 self.likeRef.removeValue() //只能保持full（如果已经空点击变full，再点击还是full）
                 
             }
-//            self.likesLbl.text = "\(self.post!.likes)"//删除无影响
+            self.likesLbl.text = "\(self.post!.likes)"//删除无影响
           
         })
 
