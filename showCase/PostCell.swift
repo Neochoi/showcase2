@@ -53,12 +53,12 @@ class PostCell: UITableViewCell {
         self.likeRef = DataService.ds.REF_USER_CURRENT.childByAppendingPath("likes").childByAppendingPath(post.postkey)
 
         
-//        self.descriptionText.text = post.postDescription
-        if let desc = post.postDescription where post.postDescription != "" {
-            self.descriptionText.text = desc
-        } else {
-            self.descriptionText.hidden = true
-        }
+        self.descriptionText.text = post.postDescription
+//        if let desc = post.postDescription where post.postDescription != "" {
+//            self.descriptionText.text = desc
+//        } else {
+//            self.descriptionText.hidden = true
+//        }
 
             
         
